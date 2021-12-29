@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CallbackHook } from './components/06-memos/CallbackHook';
+// import { CallbackHook } from './components/06-memos/CallbackHook';
 // import { MemoHook } from './components/06-memos/memoHook';
 // import { MultipleCustomHooks } from './components/03-examples/MultipleCustomHooks';
 // import { FocusScreen } from './components/04-useRef/FocusScreen';
@@ -11,10 +11,11 @@ import { CallbackHook } from './components/06-memos/CallbackHook';
 // import { CounterWithCustomHook } from './components/01-useState/CounterWithCustomHook';
 // import { HookApp } from './HookApp';
 // import { SimpleForm } from './components/02-useEffect/SimpleForm';
+import { Padre } from './components/07-tarea-memo/Padre';
 
 
 ReactDOM.render(
-  <CallbackHook />,
+  <Padre />,
   document.getElementById('root')
 );
 
