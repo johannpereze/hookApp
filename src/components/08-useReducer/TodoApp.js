@@ -50,12 +50,11 @@ export const TodoApp = () => {
     }
 
     const handleToggle = (todoId) => {
-        const action = {
+
+        dispatch({
             type: "toggle",
             payload: todoId
-        }
-
-        dispatch(action)
+        })
     }
 
     return (
@@ -70,7 +69,7 @@ export const TodoApp = () => {
                             (<li
                                 className='list-group-item'
                                 key={id}>
-                                <p onClick={() => handleToggle(id)} className={`text-center ${done && "complete"}`}>{i + 1}. {desc}</p>
+                                <p onClick={() => handleToggle(id)} className={done && "complete"}>{i + 1}. {desc}</p>
                                 <button onClick={() => handleDelete(id)} className='btn btn-danger'>Borrar</button>
                             </li>))
                         }
